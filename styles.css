@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+    background-image: url('C:/Users/Shylu/OneDrive/Desktop/Stopwatch/timer.jpg'); 
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents tiling */
+    background-attachment: fixed;  /* Keeps the background fixed while scrolling */
+    color: white;
+    text-align: center;
+    background-size: cover;  /* Ensures the background image covers the entire screen */
+}
+
+
+
+
+.container {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px); /* Adds a subtle blur effect behind the container */
+    width: 550px;
+    text-align: center;
+}
+
+.time {
+    font-size: 4em;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 15px 30px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+/* Button Styles */
+.start {
+    background: #28a745;
+    color: white;
+}
+
+.stop {
+    background: #dc3545;
+    color: white;
+}
+
+.reset {
+    background: #6c757d;
+    color: white;
+}
+
+/* Hover Effects */
+button:hover {
+    background-color: #024510; /* Darker green for start */
+}
+
+button.stop:hover {
+    background-color: #7a0110; /* Darker red for stop */
+}
+
+button.reset:hover {
+    background-color: #1a252e; /* Darker gray for reset */
+}
+
+/* Active Button Effect (Pressed) */
+button:active {
+    transform: scale(0.98); /* Slightly shrink the button on click */
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+    .time {
+        font-size: 3em;
+    }
+    button {
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+}
