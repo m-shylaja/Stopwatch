@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;  /* Full viewport height */
-    background-image: url('C:/Users/Shylu/Stopwatch/images/timer.jpg'); 
+    background-image: url('https://raw.githubusercontent.com/m-shylaja/Stopwatch/refs/heads/main//images/timer.jpg'); 
     background-position: center;  /* Centers the image */
     background-repeat: no-repeat;  /* Prevents tiling */
     background-attachment: fixed;  /* Keeps the background fixed while scrolling */
